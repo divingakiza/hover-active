@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active first element change other</title>
+  <style>
+    div {
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    .ttt {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+    }
+
+    .tyt {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+    }
+
+    .ttt:active~.tyt {
+      background-color: green;
+      font-size: 30px;
+      vertical-align: bottom;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ttt">
+    <div>click here</div>
+  </div>
+  <div class="tyt">
+    <div>output</div>
+  </div>
+</body>
+
+</html>

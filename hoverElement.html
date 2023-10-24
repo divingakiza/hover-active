@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover first element and change other</title>
+  <style>
+    .parent {
+      width: 200px;
+      height: 100px;
+      border: 2px solid green;
+      position: relative;
+      background-color: teal;
+      margin: 50px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .child {
+      width: 200px;
+      height: 100px;
+      border: 2px solid rgb(187, 20, 20);
+      position: absolute;
+      top: 0;
+      left: 300px;
+      background-color: rgb(221, 51, 198);
+      margin: 50px;
+      padding: 10px;
+    }
+
+    .parent:hover .child {
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <span>On hover this change the other element of style</span>
+    <div class="child">this element want to chane style on hover parent class</div>
+  </div>
+</body>
+
+</html>
